@@ -13,7 +13,7 @@ from pathlib import Path
 class FileManager:
     """คลาสสำหรับจัดการไฟล์"""
     
-    def __init__(self, backup_dir: str = "backups"):
+    def __init__(self, backup_dir: str = "data/backups"):
         """
         เริ่มต้น FileManager
         

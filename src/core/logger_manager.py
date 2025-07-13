@@ -12,7 +12,7 @@ from typing import Optional
 class LoggerManager:
     """คลาสสำหรับจัดการ logging"""
     
-    def __init__(self, log_dir: str = "logs", log_level: int = logging.INFO):
+    def __init__(self, log_dir: str = "data/logs", log_level: int = logging.INFO):
         """
         เริ่มต้น LoggerManager
         

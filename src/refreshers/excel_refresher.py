@@ -5,8 +5,8 @@ Excel Refresher
 
 import time
 from typing import Dict, List, Optional, Any
-from logger_manager import LoggerManager
-from file_manager import FileManager
+from ..core.logger_manager import LoggerManager
+from ..core.file_manager import FileManager
 
 try:
     import xlwings as xw

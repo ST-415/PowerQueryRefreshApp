@@ -4,21 +4,22 @@ Main Application
 """
 
 from typing import Dict, List, Optional, Any
-from config_manager import ConfigManager
-from logger_manager import LoggerManager
-from file_manager import FileManager
-from excel_refresher import ExcelRefresher
+from .core.config_manager import ConfigManager
+from .core.logger_manager import LoggerManager
+from .core.file_manager import FileManager
+from .refreshers.excel_refresher import ExcelRefresher
 import time
 import os
 
-# เปลี่ยน working directory ไปที่โฟลเดอร์ที่เก็บไฟล์ script นี้
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# เปลี่ยน working directory ไปที่โฟลเดอร์ root ของโปรเจกต์
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(project_root)
 
 
 class PowerQueryRefreshApp:
     """แอปพลิเคชันหลักสำหรับรีเฟช Power Query"""
     
-    def __init__(self, config_path: str = "config.json"):
+    def __init__(self, config_path: str = "config/config.json"):
         """
         เริ่มต้นแอปพลิเคชัน
         

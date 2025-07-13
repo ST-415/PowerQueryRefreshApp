@@ -11,7 +11,7 @@ from typing import Dict, List, Any, Optional
 class ConfigManager:
     """คลาสสำหรับจัดการการตั้งค่า"""
     
-    def __init__(self, config_path: str = "config.json"):
+    def __init__(self, config_path: str = "config/config.json"):
         """
         เริ่มต้น ConfigManager
         

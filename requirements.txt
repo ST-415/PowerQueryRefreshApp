@@ -1,0 +1,2 @@
+# Power Query Refresh Application Dependencies
+xlwings>=0.30.0

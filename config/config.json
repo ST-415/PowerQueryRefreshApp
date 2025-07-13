@@ -1,13 +1,13 @@
 {
   "excel_files": [
-     { "path": "test/ex_data1_query.xlsx" }
-    ,{ "path": "test/ex_data2_query.xlsx" }
+     { "path": "data/test/ex_data1_query.xlsx" }
+    ,{ "path": "data/test/ex_data2_query.xlsx" }
   ],
 
   "settings": {
     "auto_save": true,
     "backup_before_refresh": true,
     "log_refresh_activity": true,
-    "refresh_timeout_minutes": 30
+    "refresh_timeout_minutes": 60
   }
 }
