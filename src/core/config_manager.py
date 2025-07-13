@@ -95,6 +95,11 @@ class ConfigManager:
                 file['name'] = os.path.splitext(os.path.basename(file['path']))[0]
         return files
     
+    @excel_files.setter
+    def excel_files(self, value: List[Dict[str, str]]) -> None:
+        """Set excel files list"""
+        self._config["excel_files"] = value
+    
     @property
     def settings(self) -> Dict[str, Any]:
         """การตั้งค่าทั่วไป"""
@@ -124,3 +129,24 @@ class ConfigManager:
             "path": path
         }
         self._config["excel_files"].append(file_info)
+    
+    def update_excel_file(self, index: int, file_info: Dict[str, str]) -> None:
+        """
+        Update excel file at specific index
+        
+        Args:
+            index (int): Index of file to update
+            file_info (Dict[str, str]): New file information
+        """
+        if 0 <= index < len(self._config["excel_files"]):
+            self._config["excel_files"][index] = file_info
+    
+    def remove_excel_file(self, index: int) -> None:
+        """
+        Remove excel file at specific index
+        
+        Args:
+            index (int): Index of file to remove
+        """
+        if 0 <= index < len(self._config["excel_files"]):
+            del self._config["excel_files"][index]

@@ -2,24 +2,21 @@
 
 แอปพลิเคชันสำหรับรีเฟช Power Query ใน Excel โดยอัตโนมัติ พร้อม GUI ที่ใช้งานง่าย
 
-## คุณสมบัติ
+## 🎨 **New Dark Theme GUI**
 
-### GUI Application (หน้าต่างกราฟิก)
-- **หน้าต่างหลัก**: 
-  - ตรวจสอบรายการไฟล์ที่ตั้งค่าไว้
-  - เลือกไฟล์ที่ต้องการรีเฟช (ติ๊กเลือกได้)
-  - ปุ่มเริ่มการรีเฟชไฟล์ที่เลือก
-  - แสดงสถานะการดำเนินการแบบ real-time
-  
-- **หน้าต่างการตั้งค่า**:
-  - เพิ่ม/ลบ/แก้ไขไฟล์ Excel ที่ต้องการรีเฟช
-  - ตั้งค่า Auto Save, Backup, Logging
-  - กำหนดเวลา timeout สำหรับการรีเฟช
+### **Main Window Features**:
+- **VS Code Dark Theme**: Professional dark interface matching VS Code
+- **Compact Size**: 750x500 pixels, fixed size for focused workflow
+- **File Management**: Check file status with visual indicators (✓ Ready / ✗ Missing)
+- **Selective Refresh**: Choose which files to refresh with checkboxes
+- **Progress Tracking**: Real-time progress bar and status updates
+- **English Interface**: Clean, professional English text
 
-### Command Line Interface
-- รีเฟชแบบอัตโนมัติทั้งหมด
-- สำรองไฟล์อัตโนมัติก่อนรีเฟช
-- ลบไฟล์สำรองเก่าอัตโนมัติ
+### **Settings Window Features**:
+- **File Management Tab**: Add, edit, remove Excel files easily
+- **General Settings Tab**: Configure auto-save, backup, logging, and timeout
+- **Detailed Descriptions**: Built-in help text for all options
+- **Compact Design**: 700x550 pixels, modal window design
 
 ## โครงสร้างโปรเจกต์
 

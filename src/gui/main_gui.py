@@ -1,6 +1,6 @@
 """
 Main GUI Application
-หน้าต่างหลักสำหรับ PowerQuery Refresh Application
+PowerQuery Refresh Application Main Window
 """
 
 import tkinter as tk
@@ -21,13 +21,45 @@ from gui.settings_window import SettingsWindow
 
 
 class MainGUI:
-    """หน้าต่างหลักของแอปพลิเคชัน"""
+    """Main application window"""
     
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("PowerQuery Refresh Application")
-        self.root.geometry("800x600")
-        self.root.resizable(True, True)
+        self.root.title("PowerQuery Refresh Tool")
+        self.root.geometry("750x500")
+        self.root.resizable(False, False)  # ห้ามปรับขนาด
+        
+        # Modern Minimalist Theme Colors
+        self.colors = {
+            'bg': '#ffffff',           # White background
+            'fg': '#2c2c2c',           # Dark text
+            'select_bg': '#e67e22',    # Orange selection
+            'button_bg': '#e67e22',    # Orange button
+            'button_hover': '#f39c12', # Orange hover
+            'accent': '#8b4513',       # Brown accent
+            'success': '#27ae60',      # Green success
+            'warning': '#f39c12',      # Orange warning
+            'error': '#e74c3c',        # Red error
+            'border': '#dee2e6',       # Light border
+            'input_bg': '#f8f9fa',     # Light gray input
+        }
+        
+        # Apply modern theme
+        self.setup_modern_theme()
+        
+        # Configure messagebox colors
+        self.configure_messagebox_colors()
+        
+        # Apply additional dark styling
+        self.apply_additional_dark_styling()
+        
+        # Set window icon (optional)
+        try:
+            # You can add a .ico file here if available
+            # self.root.iconbitmap('icon.ico')
+            pass
+        except:
+            pass
         
         # สร้าง components ตรงๆ แทนการใช้ PowerQueryRefreshApp
         self.config_manager = ConfigManager()
@@ -46,103 +78,248 @@ class MainGUI:
         # ตั้งค่า protocol สำหรับปิดหน้าต่าง
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
     
+    def setup_modern_theme(self):
+        """Setup modern minimalist theme with white, brown, orange, and black colors"""
+        # Configure root window
+        self.root.configure(bg=self.colors['bg'])
+        
+        # Create custom style
+        self.style = ttk.Style()
+        
+        # Configure ttk styles for modern theme
+        self.style.theme_create('modern_minimal', parent='clam', settings={
+            'TLabel': {
+                'configure': {
+                    'background': self.colors['bg'],
+                    'foreground': self.colors['fg'],
+                    'font': ('Segoe UI', 9)
+                }
+            },
+            'TButton': {
+                'configure': {
+                    'background': self.colors['button_bg'],
+                    'foreground': 'white',
+                    'borderwidth': 0,
+                    'focuscolor': 'none',
+                    'font': ('Segoe UI', 9, 'bold'),
+                    'relief': 'flat',
+                    'padding': [20, 8]
+                },
+                'map': {
+                    'background': [('active', self.colors['button_hover']),
+                                 ('pressed', self.colors['accent'])]
+                }
+            },
+            'TFrame': {
+                'configure': {
+                    'background': self.colors['bg'],
+                    'borderwidth': 0,
+                    'relief': 'flat'
+                }
+            },
+            'TLabelFrame': {
+                'configure': {
+                    'background': self.colors['bg'],
+                    'foreground': self.colors['fg'],
+                    'borderwidth': 1,
+                    'relief': 'solid',
+                    'font': ('Segoe UI', 9, 'bold'),
+                    'bordercolor': self.colors['border']
+                }
+            },
+            'TLabelFrame.Label': {
+                'configure': {
+                    'background': self.colors['bg'],
+                    'foreground': self.colors['accent']
+                }
+            },
+            'Treeview': {
+                'configure': {
+                    'background': self.colors['input_bg'],
+                    'foreground': self.colors['fg'],
+                    'fieldbackground': self.colors['input_bg'],
+                    'borderwidth': 1,
+                    'relief': 'solid',
+                    'font': ('Segoe UI', 9),
+                    'insertcolor': self.colors['fg']
+                },
+                'map': {
+                    'background': [('selected', self.colors['select_bg'])],
+                    'foreground': [('selected', 'white')]
+                }
+            },
+            'Treeview.Heading': {
+                'configure': {
+                    'background': self.colors['border'],
+                    'foreground': self.colors['fg'],
+                    'relief': 'flat',
+                    'font': ('Segoe UI', 9, 'bold'),
+                    'borderwidth': 1
+                },
+                'map': {
+                    'background': [('active', self.colors['input_bg'])]
+                }
+            },
+            'Horizontal.TProgressbar': {
+                'configure': {
+                    'background': self.colors['accent'],
+                    'troughcolor': self.colors['border'],
+                    'borderwidth': 0,
+                    'lightcolor': self.colors['accent'],
+                    'darkcolor': self.colors['accent']
+                }
+            },
+            'TScrollbar': {
+                'configure': {
+                    'background': self.colors['border'],
+                    'troughcolor': self.colors['bg'],
+                    'borderwidth': 1,
+                    'arrowcolor': self.colors['fg'],
+                    'darkcolor': self.colors['border'],
+                    'lightcolor': self.colors['border']
+                },
+                'map': {
+                    'background': [('active', self.colors['input_bg'])]
+                }
+            },
+            'TNotebook': {
+                'configure': {
+                    'background': self.colors['bg'],
+                    'borderwidth': 1,
+                    'tabmargins': [2, 5, 2, 0]
+                }
+            },
+            'TNotebook.Tab': {
+                'configure': {
+                    'background': self.colors['input_bg'],
+                    'foreground': self.colors['fg'],
+                    'padding': [20, 10],
+                    'font': ('Segoe UI', 9),
+                    'borderwidth': 1,
+                    'relief': 'solid'
+                },
+                'map': {
+                    'background': [('selected', self.colors['bg']),
+                                 ('active', self.colors['button_bg'])],
+                    'foreground': [('selected', self.colors['accent']),
+                                 ('active', 'white')]
+                }
+            }
+        })
+        
+        # Apply the custom theme
+        self.style.theme_use('modern_minimal')
+    
     def create_widgets(self):
-        """สร้าง widgets ทั้งหมด"""
-        # Frame หลัก
-        main_frame = ttk.Frame(self.root, padding="10")
+        """Create all widgets"""
+        # Main frame
+        main_frame = ttk.Frame(self.root, padding="8")
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
         
-        # กำหนด weight สำหรับ responsive
+        # Configure responsive layout
         self.root.columnconfigure(0, weight=1)
         self.root.rowconfigure(0, weight=1)
-        main_frame.columnconfigure(1, weight=1)
+        main_frame.columnconfigure(0, weight=1)
         main_frame.rowconfigure(2, weight=1)
         
-        # หัวข้อ
-        title_label = ttk.Label(main_frame, text="PowerQuery Refresh Application", 
-                               font=('Arial', 16, 'bold'))
-        title_label.grid(row=0, column=0, columnspan=3, pady=(0, 20))
+        # Title
+        title_label = ttk.Label(main_frame, text="PowerQuery Refresh Tool", 
+                               font=('Segoe UI', 12, 'bold'))
+        title_label.grid(row=0, column=0, pady=(0, 12))
         
-        # ปุ่มการตั้งค่า
-        settings_button = ttk.Button(main_frame, text="⚙️ การตั้งค่า", 
-                                   command=self.open_settings)
-        settings_button.grid(row=1, column=0, sticky=tk.W, pady=(0, 10))
+        # Button control frame - moved to top
+        button_frame = ttk.Frame(main_frame)
+        button_frame.grid(row=1, column=0, sticky=(tk.W, tk.E), pady=(0, 12))
+        button_frame.columnconfigure(5, weight=1)
         
-        # ปุ่มรีเฟรชรายการไฟล์
-        refresh_button = ttk.Button(main_frame, text="🔄 รีเฟรชรายการ", 
-                                  command=self.refresh_file_list)
-        refresh_button.grid(row=1, column=1, pady=(0, 10))
+        # Settings button
+        settings_button = ttk.Button(button_frame, text="⚙ Settings", 
+                                   command=self.open_settings, width=10)
+        settings_button.grid(row=0, column=0, padx=(0, 4))
         
-        # สถานะการตรวจสอบ
-        self.status_label = ttk.Label(main_frame, text="กำลังโหลดรายการไฟล์...", 
-                                     foreground="blue")
-        self.status_label.grid(row=1, column=2, sticky=tk.E, pady=(0, 10))
+        # Refresh list button
+        refresh_list_button = ttk.Button(button_frame, text="🔄 Refresh", 
+                                       command=self.refresh_file_list, width=10)
+        refresh_list_button.grid(row=0, column=1, padx=4)
         
-        # Frame สำหรับรายการไฟล์
-        files_frame = ttk.LabelFrame(main_frame, text="รายการไฟล์ที่ตั้งค่าไว้", padding="10")
-        files_frame.grid(row=2, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 10))
+        # Select/Deselect buttons
+        select_all_button = ttk.Button(button_frame, text="✓ All", 
+                                     command=self.select_all_files, width=8)
+        select_all_button.grid(row=0, column=2, padx=4)
+        
+        deselect_all_button = ttk.Button(button_frame, text="✗ None", 
+                                       command=self.deselect_all_files, width=8)
+        deselect_all_button.grid(row=0, column=3, padx=4)
+        
+        # Start refresh button
+        self.refresh_button = ttk.Button(button_frame, text="🚀 Start Refresh", 
+                                       command=self.start_refresh, width=12)
+        self.refresh_button.grid(row=0, column=4, padx=(4, 8))
+        
+        # Status label - moved to right side of button frame
+        self.status_label = ttk.Label(button_frame, text="Loading files...", 
+                                     foreground=self.colors['warning'])
+        self.status_label.grid(row=0, column=5, sticky=tk.E)
+        
+        # Files frame
+        files_frame = ttk.LabelFrame(main_frame, text="Excel Files", padding="8")
+        files_frame.grid(row=2, column=0, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 8))
         files_frame.columnconfigure(0, weight=1)
         files_frame.rowconfigure(0, weight=1)
         
-        # Treeview สำหรับแสดงรายการไฟล์
+        # Treeview for file list
         self.create_file_treeview(files_frame)
-        
-        # Frame สำหรับปุ่มควบคุม
-        control_frame = ttk.Frame(main_frame)
-        control_frame.grid(row=3, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(10, 0))
-        control_frame.columnconfigure(0, weight=1)
-        control_frame.columnconfigure(1, weight=1)
-        control_frame.columnconfigure(2, weight=1)
-        
-        # ปุ่มเลือกทั้งหมด/ไม่เลือกทั้งหมด
-        select_all_button = ttk.Button(control_frame, text="✓ เลือกทั้งหมด", 
-                                     command=self.select_all_files)
-        select_all_button.grid(row=0, column=0, sticky=tk.W, padx=(0, 5))
-        
-        deselect_all_button = ttk.Button(control_frame, text="✗ ไม่เลือกทั้งหมด", 
-                                       command=self.deselect_all_files)
-        deselect_all_button.grid(row=0, column=1, padx=5)
-        
-        # ปุ่มเริ่มรีเฟช
-        self.refresh_button = ttk.Button(control_frame, text="🚀 เริ่มรีเฟชไฟล์ที่เลือก", 
-                                       command=self.start_refresh, style='Accent.TButton')
-        self.refresh_button.grid(row=0, column=2, sticky=tk.E, padx=(5, 0))
         
         # Progress bar
         self.progress_var = tk.DoubleVar()
         self.progress_bar = ttk.Progressbar(main_frame, variable=self.progress_var, 
                                           mode='determinate')
-        self.progress_bar.grid(row=4, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(10, 0))
+        self.progress_bar.grid(row=3, column=0, sticky=(tk.W, tk.E), pady=(8, 0))
         
-        # ข้อความสถานะ
-        self.progress_label = ttk.Label(main_frame, text="พร้อมดำเนินการ")
-        self.progress_label.grid(row=5, column=0, columnspan=3, pady=(5, 0))
+        # Progress label
+        self.progress_label = ttk.Label(main_frame, text="Ready")
+        self.progress_label.grid(row=4, column=0, pady=(4, 0))
     
     def create_file_treeview(self, parent):
-        """สร้าง Treeview สำหรับแสดงรายการไฟล์"""
-        # สร้าง Treeview
+        """Create treeview for file list"""
+        # Create Treeview
         columns = ("select", "name", "path", "status")
-        self.tree = ttk.Treeview(parent, columns=columns, show="headings", height=10)
+        self.tree = ttk.Treeview(parent, columns=columns, show="headings", height=8)
         
-        # กำหนดหัวคอลัมน์
-        self.tree.heading("select", text="เลือก")
-        self.tree.heading("name", text="ชื่อไฟล์")
-        self.tree.heading("path", text="เส้นทาง")
-        self.tree.heading("status", text="สถานะ")
+        # Configure column headings
+        self.tree.heading("select", text="Select")
+        self.tree.heading("name", text="File Name")
+        self.tree.heading("path", text="Path")
+        self.tree.heading("status", text="Status")
         
-        # กำหนดความกว้างคอลัมน์
-        self.tree.column("select", width=80, anchor="center")
-        self.tree.column("name", width=200)
-        self.tree.column("path", width=300)
-        self.tree.column("status", width=100, anchor="center")
+        # Configure column widths
+        self.tree.column("select", width=60, anchor="center")
+        self.tree.column("name", width=150)
+        self.tree.column("path", width=250)
+        self.tree.column("status", width=80, anchor="center")
+        
+        # Apply dark theme using style map instead of direct configure
+        style_name = "Dark.Treeview"
+        self.style.configure(style_name,
+                           background=self.colors['input_bg'],
+                           foreground=self.colors['fg'],
+                           fieldbackground=self.colors['input_bg'])
+        self.style.map(style_name,
+                      background=[('selected', self.colors['select_bg'])],
+                      foreground=[('selected', 'white')])
+        self.tree.configure(style=style_name)
         
         # Scrollbar
         scrollbar = ttk.Scrollbar(parent, orient=tk.VERTICAL, command=self.tree.yview)
         self.tree.configure(yscrollcommand=scrollbar.set)
         
-        # วางใน grid
+        # Grid layout
         self.tree.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
         scrollbar.grid(row=0, column=1, sticky=(tk.N, tk.S))
+        
+        # Additional dark theme configuration for treeview
+        self.tree.tag_configure('oddrow', background=self.colors['input_bg'])
+        self.tree.tag_configure('evenrow', background=self.colors['bg'])
         
         # Bind double-click event
         self.tree.bind("<Double-1>", self.toggle_file_selection)
@@ -212,60 +389,60 @@ class MainGUI:
         return self.file_manager.cleanup_old_backups(days_to_keep)
     
     def refresh_file_list(self):
-        """รีเฟรชรายการไฟล์และตรวจสอบสถานะ"""
-        self.status_label.config(text="กำลังตรวจสอบไฟล์...", foreground="blue")
+        """Refresh file list and check status"""
+        self.status_label.config(text="Checking files...", foreground=self.colors['warning'])
         self.root.update_idletasks()
         
         try:
-            # ตรวจสอบไฟล์
+            # Verify files
             verification_result = self.verify_files()
             
-            # ล้างรายการเก่า
+            # Clear old list
             self.tree.delete(*self.tree.get_children())
             self.file_vars.clear()
             self.file_info.clear()
             
-            # เพิ่มไฟล์ valid
+            # Add valid files
             for file_info in verification_result["excel_files"]["valid"]:
-                var = tk.BooleanVar(value=True)  # เลือกไว้ตั้งแต่แรก
+                var = tk.BooleanVar(value=True)  # Selected by default
                 self.file_vars.append(var)
                 self.file_info.append(file_info)
                 
                 name = os.path.basename(file_info["path"])
                 self.tree.insert("", "end", values=(
-                    "✓", name, file_info["path"], "✓ พร้อม"
+                    "✓", name, file_info["path"], "✓ Ready"
                 ))
             
-            # เพิ่มไฟล์ invalid
+            # Add invalid files
             for file_info in verification_result["excel_files"]["invalid"]:
-                var = tk.BooleanVar(value=False)  # ไม่เลือก
+                var = tk.BooleanVar(value=False)  # Not selected
                 self.file_vars.append(var)
                 self.file_info.append(file_info)
                 
                 name = os.path.basename(file_info["path"])
                 self.tree.insert("", "end", values=(
-                    "✗", name, file_info["path"], "✗ ไม่พบ"
+                    "✗", name, file_info["path"], "✗ Missing"
                 ))
             
-            # อัพเดทสถานะ
+            # Update status
             total_files = len(self.file_info)
             valid_files = verification_result["total_valid"]
             invalid_files = verification_result["total_invalid"]
             
             if invalid_files > 0:
                 self.status_label.config(
-                    text=f"พบไฟล์ {total_files} ไฟล์ (ใช้ได้ {valid_files}, ไม่พบ {invalid_files})",
-                    foreground="orange"
+                    text=f"{total_files} files ({valid_files} ready, {invalid_files} missing)",
+                    foreground=self.colors['warning']
                 )
             else:
                 self.status_label.config(
-                    text=f"พบไฟล์ {valid_files} ไฟล์ (ทั้งหมดพร้อมใช้งาน)",
-                    foreground="green"
+                    text=f"{valid_files} files (all ready)",
+                    foreground=self.colors['success']
                 )
                 
         except Exception as e:
-            messagebox.showerror("ข้อผิดพลาด", f"ไม่สามารถโหลดรายการไฟล์ได้: {e}")
-            self.status_label.config(text="เกิดข้อผิดพลาด", foreground="red")
+            messagebox.showerror("Error", f"Failed to load file list: {e}")
+            self.status_label.config(text="Error occurred", foreground=self.colors['error'])
     
     def toggle_file_selection(self, event):
         """สลับการเลือกไฟล์เมื่อ double-click"""
@@ -283,19 +460,19 @@ class MainGUI:
             self.tree.item(item, values=values)
     
     def select_all_files(self):
-        """เลือกไฟล์ทั้งหมดที่ใช้ได้"""
+        """Select all available files"""
         for i, var in enumerate(self.file_vars):
             item = self.tree.get_children()[i]
             values = list(self.tree.item(item, "values"))
             
-            # เลือกเฉพาะไฟล์ที่สถานะ "✓ พร้อม"
-            if values[3] == "✓ พร้อม":
+            # Select only files with "✓ Ready" status
+            if values[3] == "✓ Ready":
                 var.set(True)
                 values[0] = "✓"
                 self.tree.item(item, values=values)
     
     def deselect_all_files(self):
-        """ไม่เลือกไฟล์ทั้งหมด"""
+        """Deselect all files"""
         for i, var in enumerate(self.file_vars):
             var.set(False)
             item = self.tree.get_children()[i]
@@ -312,69 +489,69 @@ class MainGUI:
         return selected_files
     
     def start_refresh(self):
-        """เริ่มกระบวนการรีเฟช"""
+        """Start refresh process"""
         selected_files = self.get_selected_files()
         
         if not selected_files:
-            messagebox.showwarning("ไม่มีไฟล์ที่เลือก", 
-                                 "กรุณาเลือกไฟล์อย่างน้อย 1 ไฟล์ที่ต้องการรีเฟช")
+            messagebox.showwarning("No Files Selected", 
+                                 "Please select at least 1 file to refresh")
             return
         
-        # ยืนยันการดำเนินการ
-        result = messagebox.askyesno("ยืนยันการรีเฟช", 
-                                   f"คุณต้องการรีเฟช {len(selected_files)} ไฟล์ใช่หรือไม่?\n\n"
-                                   "หมายเหตุ: ไฟล์จะถูกสำรองอัตโนมัติก่อนรีเฟช")
+        # Confirm action
+        result = messagebox.askyesno("Confirm Refresh", 
+                                   f"Do you want to refresh {len(selected_files)} file(s)?\n\n"
+                                   "Note: Files will be automatically backed up before refresh")
         
         if result:
-            # เริ่มการรีเฟชใน thread แยก
-            self.refresh_button.config(state="disabled", text="กำลังรีเฟช...")
+            # Start refresh in separate thread
+            self.refresh_button.config(state="disabled", text="Refreshing...")
             self.progress_var.set(0)
-            self.progress_label.config(text="เริ่มต้นการรีเฟช...")
+            self.progress_label.config(text="Starting refresh...")
             
             thread = threading.Thread(target=self.refresh_worker, args=(selected_files,))
             thread.daemon = True
             thread.start()
     
     def refresh_worker(self, selected_files):
-        """Worker function สำหรับรีเฟชไฟล์ (รันใน thread แยก)"""
+        """Worker function for refreshing files (runs in separate thread)"""
         try:
             total_steps = 4  # verify, backup, cleanup, refresh
             current_step = 0
             
-            # ขั้นตอนที่ 1: ตรวจสอบไฟล์
-            self.update_progress(current_step / total_steps * 100, "ตรวจสอบไฟล์...")
+            # Step 1: Verify files
+            self.update_progress(current_step / total_steps * 100, "Verifying files...")
             verification_result = self.verify_files()
             current_step += 1
             
-            # ขั้นตอนที่ 2: สำรองไฟล์
-            self.update_progress(current_step / total_steps * 100, "สร้างไฟล์สำรอง...")
+            # Step 2: Create backups
+            self.update_progress(current_step / total_steps * 100, "Creating backups...")
             backup_result = self.create_backups()
             current_step += 1
             
-            # ขั้นตอนที่ 3: ลบไฟล์สำรองเก่า
-            self.update_progress(current_step / total_steps * 100, "ลบไฟล์สำรองเก่า...")
+            # Step 3: Cleanup old backups
+            self.update_progress(current_step / total_steps * 100, "Cleaning up old backups...")
             deleted_count = self.auto_cleanup_backups(30)
             current_step += 1
             
-            # ขั้นตอนที่ 4: รีเฟชไฟล์
-            self.update_progress(current_step / total_steps * 100, "รีเฟชไฟล์ Excel...")
+            # Step 4: Refresh files
+            self.update_progress(current_step / total_steps * 100, "Refreshing Excel files...")
             
-            # ใช้เฉพาะไฟล์ที่เลือก
+            # Use only selected files
             refresh_result = self.excel_refresher.refresh_multiple_files(
                 selected_files,
                 self.config_manager.settings
             )
             
-            # เสร็จสิ้น
-            self.update_progress(100, "เสร็จสิ้น!")
+            # Complete
+            self.update_progress(100, "Complete!")
             
-            # แสดงผลลัพธ์
+            # Show results
             self.show_refresh_result(verification_result, backup_result, deleted_count, refresh_result)
             
         except Exception as e:
-            self.root.after(0, lambda: messagebox.showerror("ข้อผิดพลาด", f"เกิดข้อผิดพลาดในการรีเฟช: {e}"))
+            self.root.after(0, lambda: messagebox.showerror("Error", f"Refresh failed: {e}"))
         finally:
-            # เปิดใช้งานปุ่มอีกครั้ง
+            # Re-enable button
             self.root.after(0, self.reset_refresh_button)
     
     def update_progress(self, value, text):
@@ -383,27 +560,27 @@ class MainGUI:
         self.root.after(0, lambda: self.progress_label.config(text=text))
     
     def show_refresh_result(self, verification_result, backup_result, deleted_count, refresh_result):
-        """แสดงผลการรีเฟช"""
-        message = "=== สรุปผลการรีเฟช ===\n\n"
-        message += f"ไฟล์ที่ตรวจสอบ: ถูกต้อง {verification_result['total_valid']}, ไม่ถูกต้อง {verification_result['total_invalid']}\n"
-        message += f"ไฟล์สำรอง: สำเร็จ {backup_result['success']}, ล้มเหลว {backup_result['failed']}\n"
-        message += f"ไฟล์สำรองเก่าที่ลบ: {deleted_count} ไฟล์\n"
-        message += f"Excel รีเฟช: สำเร็จ {refresh_result['success']}, ล้มเหลว {refresh_result['failed']}\n"
-        message += f"รวมทั้งหมด: {refresh_result['total']} ไฟล์"
+        """Show refresh results"""
+        message = "=== Refresh Summary ===\n\n"
+        message += f"Files verified: {verification_result['total_valid']} valid, {verification_result['total_invalid']} invalid\n"
+        message += f"Backups: {backup_result['success']} success, {backup_result['failed']} failed\n"
+        message += f"Old backups deleted: {deleted_count} files\n"
+        message += f"Excel refresh: {refresh_result['success']} success, {refresh_result['failed']} failed\n"
+        message += f"Total: {refresh_result['total']} files"
         
         if refresh_result['failed'] > 0:
-            self.root.after(0, lambda: messagebox.showwarning("รีเฟชเสร็จสิ้น (มีข้อผิดพลาดบางส่วน)", message))
+            self.root.after(0, lambda: messagebox.showwarning("Refresh Complete (with errors)", message))
         else:
-            self.root.after(0, lambda: messagebox.showinfo("รีเฟชเสร็จสิ้น", message))
+            self.root.after(0, lambda: messagebox.showinfo("Refresh Complete", message))
         
-        # รีเฟรชรายการไฟล์
+        # Refresh file list
         self.root.after(0, self.refresh_file_list)
     
     def reset_refresh_button(self):
-        """รีเซ็ตปุ่มรีเฟช"""
-        self.refresh_button.config(state="normal", text="🚀 เริ่มรีเฟชไฟล์ที่เลือก")
+        """Reset refresh button"""
+        self.refresh_button.config(state="normal", text="🚀 Start Refresh")
         self.progress_var.set(0)
-        self.progress_label.config(text="พร้อมดำเนินการ")
+        self.progress_label.config(text="Ready")
     
     def open_settings(self):
         """เปิดหน้าต่างการตั้งค่า"""
@@ -417,6 +594,42 @@ class MainGUI:
     def run(self):
         """เริ่มการทำงาน GUI"""
         self.root.mainloop()
+    
+    def configure_messagebox_colors(self):
+        """Configure messagebox colors for dark theme"""
+        try:
+            # Configure tkinter default colors for messageboxes
+            self.root.option_add('*Dialog.msg.background', self.colors['bg'])
+            self.root.option_add('*Dialog.msg.foreground', self.colors['fg'])
+            self.root.option_add('*Dialog.background', self.colors['bg'])
+            self.root.option_add('*Dialog.foreground', self.colors['fg'])
+            self.root.option_add('*Button.background', self.colors['button_bg'])
+            self.root.option_add('*Button.foreground', 'white')
+            self.root.option_add('*Button.activeBackground', self.colors['button_hover'])
+            self.root.option_add('*Button.activeForeground', 'white')
+        except:
+            pass
+    
+    def apply_additional_dark_styling(self):
+        """Apply additional dark styling to ensure no white backgrounds"""
+        try:
+            # Force dark colors on any remaining white elements
+            self.root.tk_setPalette(
+                background=self.colors['bg'],
+                foreground=self.colors['fg'],
+                activeBackground=self.colors['button_bg'],
+                activeForeground='white',
+                selectBackground=self.colors['select_bg'],
+                selectForeground='white'
+            )
+            
+            # Configure default button and entry colors
+            self.root.option_add('*TCombobox*Listbox.background', self.colors['input_bg'])
+            self.root.option_add('*TCombobox*Listbox.foreground', self.colors['fg'])
+            self.root.option_add('*TCombobox*Listbox.selectBackground', self.colors['select_bg'])
+            
+        except Exception as e:
+            pass  # Ignore any errors in styling
 
 
 def main():

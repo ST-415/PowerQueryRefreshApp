@@ -1,9 +1,14 @@
 {
   "excel_files": [
-     { "path": "data/test/ex_data1_query.xlsx" }
-    ,{ "path": "data/test/ex_data2_query.xlsx" }
+    {
+      "path": "data/test/ex_data1_query.xlsx",
+      "name": "ex_data1_query"
+    },
+    {
+      "path": "data/test/ex_data2_query.xlsx",
+      "name": "ex_data2_query"
+    }
   ],
-
   "settings": {
     "auto_save": true,
     "backup_before_refresh": true,
