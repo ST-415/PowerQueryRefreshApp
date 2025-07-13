@@ -4,9 +4,21 @@ Excel Refresher
 """
 
 import time
+import sys
+import os
 from typing import Dict, List, Optional, Any
-from ..core.logger_manager import LoggerManager
-from ..core.file_manager import FileManager
+
+# เพิ่ม path สำหรับ import เมื่อใช้จาก GUI
+if __name__ != "__main__":
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+try:
+    from core.logger_manager import LoggerManager
+    from core.file_manager import FileManager
+except ImportError:
+    # fallback สำหรับการใช้งานปกติ
+    from ..core.logger_manager import LoggerManager
+    from ..core.file_manager import FileManager
 
 try:
     import xlwings as xw
