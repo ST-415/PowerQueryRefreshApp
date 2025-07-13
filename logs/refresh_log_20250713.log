@@ -1,0 +1,514 @@
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_085438_ex_data1_query.xlsx
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_085438_1.pbix
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 08:54:38 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_085438_ex_data1_query.xlsx
+2025-07-13 08:54:39 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 08:54:40 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 08:54:40 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 08:54:40 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 08:54:44 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 08:54:44 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 08:54:44 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_085445_1.pbix
+2025-07-13 08:54:45 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 08:54:45 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_085709_ex_data1_query.xlsx
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_085709_1.pbix
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_085709_ex_data1_query.xlsx
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 08:57:09 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 08:57:13 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 08:57:13 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 08:57:13 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_085714_1.pbix
+2025-07-13 08:57:14 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 08:57:14 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_085733_ex_data1_query.xlsx
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_085733_1.pbix
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 08:57:33 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_085733_ex_data1_query.xlsx
+2025-07-13 08:57:34 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 08:57:34 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 08:57:34 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 08:57:34 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_085738_1.pbix
+2025-07-13 08:57:38 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 08:57:38 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_090113_ex_data1_query.xlsx
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_090113_1.pbix
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:01:13 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090113_ex_data1_query.xlsx
+2025-07-13 09:01:14 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:01:14 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:01:14 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:01:14 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090118_1.pbix
+2025-07-13 09:01:18 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:01:18 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_090307_ex_data1_query.xlsx
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_090307_1.pbix
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090307_ex_data1_query.xlsx
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:03:07 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:03:11 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090311_1.pbix
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - พบ Power BI ผ่าน AppxPackage: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - เส้นทางทั้งหมดที่จะตรวจสอบ: ['C:\\Program Files\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files (x86)\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Users\\shins\\AppData\\Local\\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\\PBIDesktop.exe']
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ไม่พบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\PBIDesktop.exe
+2025-07-13 09:03:12 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:03:12 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_090353_ex_data1_query.xlsx
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_090353_1.pbix
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:03:53 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090353_ex_data1_query.xlsx
+2025-07-13 09:03:54 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:03:54 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:03:54 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:03:54 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:03:58 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090358_1.pbix
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - เส้นทางทั้งหมดที่จะตรวจสอบ: ['C:\\Program Files\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files (x86)\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Users\\shins\\AppData\\Local\\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe']
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - ไม่พบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:03:59 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:03:59 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_090434_ex_data1_query.xlsx
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_090434_1.pbix
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090434_ex_data1_query.xlsx
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:04:34 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:04:38 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:04:38 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:04:38 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090439_1.pbix
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - พบ Power BI ผ่าน AppxPackage: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - เส้นทางทั้งหมดที่จะตรวจสอบ: ['C:\\Program Files\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files (x86)\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Users\\shins\\AppData\\Local\\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\\bin\\PBIDesktop.exe']
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ไม่พบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - พบ Power BI Desktop: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - เปิดไฟล์ Power BI ด้วย C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe: test/1.pbix
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - เปิดไฟล์ Power BI แล้ว: Example Dashboard
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - กรุณารีเฟชข้อมูลใน Power BI Desktop
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - หากต้องการรีเฟชอัตโนมัติ ให้ใช้ Power BI REST API
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:04:39 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Power Query เริ่มทำงาน ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ✓ Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 3, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_090657_ex_data1_query.xlsx
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ✓ สำรอง Power BI: Example Dashboard → backups\20250713_090657_1.pbix
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:06:57 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090657_ex_data1_query.xlsx
+2025-07-13 09:06:58 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:06:58 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:06:58 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:06:58 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Power BI ===
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-13 09:07:02 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_090702_1.pbix
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - พบ Power BI ผ่าน AppxPackage: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - เส้นทางทั้งหมดที่จะตรวจสอบ: ['C:\\Program Files\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files (x86)\\Microsoft Power BI Desktop/bin/PBIDesktop.exe', 'C:\\Users\\shins\\AppData\\Local\\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe', 'C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\\bin\\PBIDesktop.exe']
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ไม่พบ: C:\Program Files (x86)\Microsoft Power BI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ไม่พบ: C:\Users\shins\AppData\Local\Microsoft/PowerBI Desktop/bin/PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - ตรวจสอบ: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - พบ Power BI Desktop: C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - เปิดไฟล์ Power BI ด้วย C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\PBIDesktop.exe: test/1.pbix
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - เปิดไฟล์ Power BI แล้ว: Example Dashboard
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - กรุณารีเฟชข้อมูลใน Power BI Desktop
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - หากต้องการรีเฟชอัตโนมัติ ให้ใช้ Power BI REST API
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:07:03 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Excel เริ่มทำงาน ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - ✓ Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - ✓ Data Source: Raw Data Source - test/raw_data/ex_1.xlsx
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 2, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: Example Data Query → backups\20250713_093103_ex_data1_query.xlsx
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 1, ล้มเหลว 0
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-13 09:31:03 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_093103_ex_data1_query.xlsx
+2025-07-13 09:31:04 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:31:04 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:31:04 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:31:04 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:31:08 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Excel เริ่มทำงาน ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - ✓ Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 1, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data1_query → backups\20250713_093653_ex_data1_query.xlsx
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 1, ล้มเหลว 0
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 09:36:53 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_093653_ex_data1_query.xlsx
+2025-07-13 09:36:54 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:36:54 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:36:54 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:36:54 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data1_query
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:36:58 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Excel เริ่มทำงาน ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ✓ Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ✓ Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 2, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data1_query → backups\20250713_093723_ex_data1_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data2_query → backups\20250713_093723_ex_data2_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 2 ไฟล์
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_093723_ex_data1_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:37:23 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:37:27 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:37:27 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:37:27 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data1_query
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250713_093728_ex_data2_query.xlsx
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data2_query.xlsx
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:37:28 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:37:32 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:37:32 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:37:32 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data2_query
+2025-07-13 09:37:33 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:37:33 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 2/2 ไฟล์
+2025-07-13 09:37:33 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:37:33 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Excel เริ่มทำงาน ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ✓ Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ✓ Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 2, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data1_query → backups\ex_data1_query\20250713_094318_ex_data1_query.xlsx
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data2_query → backups\ex_data2_query\20250713_094318_ex_data2_query.xlsx
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 2 ไฟล์
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 09:43:18 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\ex_data1_query\20250713_094318_ex_data1_query.xlsx
+2025-07-13 09:43:19 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:43:19 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 09:43:19 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:43:19 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:43:23 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:43:23 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:43:23 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data1_query
+2025-07-13 09:43:23 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:43:23 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 09:43:23 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\ex_data2_query\20250713_094323_ex_data2_query.xlsx
+2025-07-13 09:43:24 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 09:43:24 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data2_query.xlsx
+2025-07-13 09:43:24 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 09:43:24 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data2_query
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 2/2 ไฟล์
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 09:43:28 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Excel เริ่มทำงาน ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ✓ Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ✓ Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 2, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data1_query → backups\ex_data1_query\20250713_100255_ex_data1_query.xlsx
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data2_query → backups\ex_data2_query\20250713_100255_ex_data2_query.xlsx
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 2 ไฟล์
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 10:02:55 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\ex_data1_query\20250713_100255_ex_data1_query.xlsx
+2025-07-13 10:02:56 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 10:02:56 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 10:02:56 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 10:02:56 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 10:03:00 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 10:03:00 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 10:03:00 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data1_query
+2025-07-13 10:03:00 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 10:03:00 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 10:03:00 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\ex_data2_query\20250713_100300_ex_data2_query.xlsx
+2025-07-13 10:03:01 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 10:03:01 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data2_query.xlsx
+2025-07-13 10:03:01 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 10:03:01 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data2_query
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 2/2 ไฟล์
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 10:03:05 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - === โปรแกรมรีเฟช Excel เริ่มทำงาน ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - === เริ่มการรีเฟชอัตโนมัติ ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - === เริ่มตรวจสอบไฟล์ ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ✓ Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ✓ Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ผลการตรวจสอบ: ไฟล์ถูกต้อง 2, ไฟล์ไม่ถูกต้อง 0
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - === เริ่มสร้างไฟล์สำรอง ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data1_query → backups\ex_data1_query\20250713_100332_ex_data1_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ✓ สำรอง Excel: ex_data2_query → backups\ex_data2_query\20250713_100332_ex_data2_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ผลการสำรอง: สำเร็จ 2, ล้มเหลว 0
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - === เริ่มลบไฟล์สำรองเก่า (เก็บไว้ 30 วัน) ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - ลบไฟล์สำรองแล้ว 0 ไฟล์
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - === เริ่มรีเฟช Excel ===
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 2 ไฟล์
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data1_query - test/ex_data1_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\ex_data1_query\20250713_100332_ex_data1_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 10:03:32 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data1_query
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: ex_data2_query - test/ex_data2_query.xlsx
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\ex_data2_query\20250713_100337_ex_data2_query.xlsx
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data2_query.xlsx
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-13 10:03:37 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-13 10:03:41 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-13 10:03:42 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-13 10:03:42 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: ex_data2_query
+2025-07-13 10:03:42 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-13 10:03:42 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 2/2 ไฟล์
+2025-07-13 10:03:42 - PowerQueryRefresher - INFO - === การรีเฟชอัตโนมัติเสร็จสิ้น ===
+2025-07-13 10:03:42 - PowerQueryRefresher - INFO - === โปรแกรมจบการทำงาน ===

@@ -1,0 +1,24 @@
+2025-07-12 23:14:08,455 - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-12 23:14:08,457 - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-12 23:14:08,459 - INFO - สำรองไฟล์: test/ex_data1_query.xlsx -> backups\20250712_231408_ex_data1_query.xlsx
+2025-07-12 23:14:09,455 - INFO - รีเฟช connection: Query - Table1
+2025-07-12 23:14:14,289 - INFO - บันทึกไฟล์: test/ex_data1_query.xlsx
+2025-07-12 23:14:14,769 - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-12 23:14:14,786 - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-12 23:30:12 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel 1 ไฟล์
+2025-07-12 23:30:12 - PowerQueryRefresher - INFO - เริ่มรีเฟช Excel: Example Data Query - test/ex_data1_query.xlsx
+2025-07-12 23:30:12 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250712_233012_ex_data1_query.xlsx
+2025-07-12 23:30:12 - PowerQueryRefresher - INFO - เปิด Excel Application (visible=False)
+2025-07-12 23:30:13 - PowerQueryRefresher - INFO - เปิดไฟล์: test/ex_data1_query.xlsx
+2025-07-12 23:30:13 - PowerQueryRefresher - INFO - พบการเชื่อมต่อ 1 รายการ
+2025-07-12 23:30:13 - PowerQueryRefresher - INFO - รีเฟชการเชื่อมต่อ 1/1: Query - Table1
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - การรีเฟชเสร็จสิ้น
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - บันทึกไฟล์สำเร็จ
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: Example Data Query
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - ปิด Excel Application
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - รีเฟช Excel เสร็จสิ้น: 1/1 ไฟล์
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI 1 ไฟล์
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - เริ่มรีเฟช Power BI: Example Dashboard - test/1.pbix
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - สำรองไฟล์: backups\20250712_233017_1.pbix
+2025-07-12 23:30:17 - PowerQueryRefresher - ERROR - ไม่พบการติดตั้ง Power BI Desktop
+2025-07-12 23:30:17 - PowerQueryRefresher - INFO - รีเฟช Power BI เสร็จสิ้น: 0/1 ไฟล์
