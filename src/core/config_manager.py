@@ -168,3 +168,21 @@ class ConfigManager:
             updates (Dict[str, Any]): การตั้งค่าที่ต้องการอัปเดต
         """
         self._config.update(updates)
+
+    def get_config(self) -> Dict[str, Any]:
+        """
+        ดึงการตั้งค่าทั้งหมด
+        
+        Returns:
+            Dict[str, Any]: ข้อมูลการตั้งค่าทั้งหมด
+        """
+        return self._config.copy()
+    
+    def update_config(self, updates: Dict[str, Any]) -> None:
+        """
+        อัปเดตการตั้งค่า
+        
+        Args:
+            updates (Dict[str, Any]): การตั้งค่าที่ต้องการอัปเดต
+        """
+        self._config.update(updates)

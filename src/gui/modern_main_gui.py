@@ -42,6 +42,10 @@ class ModernMainGUI:
         self.file_vars = []  # เก็บ BooleanVar สำหรับแต่ละไฟล์
         self.file_info = []  # เก็บข้อมูลไฟล์
         
+        # Threading variables
+        self.refresh_thread = None
+        self.stop_refresh_flag = False
+        
         # Create widgets
         self.create_widgets()
         self.refresh_file_list()
@@ -206,6 +210,34 @@ class ModernMainGUI:
             text_color=("#2c3e50", "#ecf0f1")
         )
         self.status_label.pack(side="left", padx=15)
+        
+        # Log viewer button
+        self.log_viewer_button = ctk.CTkButton(
+            main_frame,
+            text="📜 View Logs",
+            command=self.show_logs,
+            width=120,
+            height=40,
+            corner_radius=20,
+            font=ctk.CTkFont(size=14, weight="bold"),
+            fg_color="#2980b9",
+            hover_color="#2471a3"
+        )
+        self.log_viewer_button.pack(side="left", padx=10, pady=(10, 0))
+        
+        # About button
+        self.about_button = ctk.CTkButton(
+            main_frame,
+            text="ℹ️ About",
+            command=self.show_about,
+            width=120,
+            height=40,
+            corner_radius=20,
+            font=ctk.CTkFont(size=14, weight="bold"),
+            fg_color="#8e44ad",
+            hover_color="#732d91"
+        )
+        self.about_button.pack(side="left", padx=10, pady=(10, 0))
     
     def refresh_file_list(self):
         """Refresh the file list with modern cards"""
@@ -219,11 +251,7 @@ class ModernMainGUI:
         
         # Get file list from file manager
         try:
-            # Get data folder from config
-            config = self.config_manager.get_config()
-            data_folder = config.get('data_folder', 'data')
-            
-            files = self.file_manager.get_excel_files(data_folder)
+            files = self.file_manager.get_excel_files()
             
             if not files:
                 # Show empty state
@@ -232,7 +260,7 @@ class ModernMainGUI:
                 
                 empty_label = ctk.CTkLabel(
                     empty_frame,
-                    text=f"📂 No Excel files found\nPlace your Excel files in the '{data_folder}' folder",
+                    text="📂 No Excel files found\nPlace your Excel files in the data folder",
                     font=ctk.CTkFont(size=14),
                     text_color=("#7f8c8d", "#bdc3c7")
                 )
@@ -355,8 +383,13 @@ class ModernMainGUI:
         """Worker thread for refresh process"""
         try:
             total_files = len(selected_files)
+            self.stop_refresh_flag = False
             
             for i, file_path in enumerate(selected_files):
+                # Check if stop was requested
+                if self.stop_refresh_flag:
+                    break
+                    
                 # Update progress
                 progress = (i + 1) / total_files
                 self.root.after(0, lambda p=progress: self.progress.set(p))
@@ -369,8 +402,12 @@ class ModernMainGUI:
                 # Refresh the file
                 self.excel_refresher.refresh_file(file_path)
                 
-            # Refresh completed
-            self.root.after(0, self.refresh_completed)
+            # Check if stopped or completed
+            if self.stop_refresh_flag:
+                self.root.after(0, lambda: self.status_label.configure(text="Refresh stopped"))
+            else:
+                # Refresh completed
+                self.root.after(0, self.refresh_completed)
             
         except Exception as e:
             self.root.after(0, lambda: self.show_error(f"Refresh error: {str(e)}"))
@@ -386,8 +423,7 @@ class ModernMainGUI:
     
     def stop_refresh(self):
         """Stop the refresh process"""
-        # Note: This is a simplified stop mechanism
-        # In a real implementation, you'd need to implement proper thread cancellation
+        self.stop_refresh_flag = True
         self.start_button.configure(state="normal")
         self.stop_button.configure(state="disabled")
         self.progress.set(0)
@@ -401,6 +437,83 @@ class ModernMainGUI:
         except Exception as e:
             self.show_error(f"Error opening settings: {str(e)}")
     
+    def show_logs(self):
+        """Show log viewer window"""
+        try:
+            log_window = LogViewerWindow(self.root, self.logger_manager)
+        except Exception as e:
+            self.show_error(f"Error opening log viewer: {str(e)}")
+    
+    def show_about(self):
+        """Show about dialog"""
+        about_text = """
+PowerQuery Refresh Tool v2.0
+Modern GUI Application
+
+Features:
+• Beautiful modern interface using CustomTkinter
+• Batch refresh multiple Excel files
+• Automatic backup before refresh
+• Real-time progress tracking
+• Comprehensive logging
+• Flexible configuration
+
+Created with ❤️ by PowerQuery Team
+        """
+        messagebox.showinfo("About", about_text)
+    
+    def add_files(self):
+        """Add files to the list"""
+        files = filedialog.askopenfilenames(
+            title="Select Excel Files",
+            filetypes=[("Excel files", "*.xlsx *.xls"), ("All files", "*.*")]
+        )
+        
+        if files:
+            # Copy files to data folder
+            data_folder = self.config_manager.get_config().get('data_folder', 'data')
+            
+            for file_path in files:
+                try:
+                    import shutil
+                    file_name = os.path.basename(file_path)
+                    dest_path = os.path.join(data_folder, file_name)
+                    shutil.copy2(file_path, dest_path)
+                except Exception as e:
+                    self.show_error(f"Error copying file {file_name}: {str(e)}")
+            
+            # Refresh the file list
+            self.refresh_file_list()
+            self.show_success("Files added successfully!")
+    
+    def remove_selected_files(self):
+        """Remove selected files from the list"""
+        selected_files = []
+        for i, var in enumerate(self.file_vars):
+            if var.get():
+                selected_files.append(self.file_info[i])
+        
+        if not selected_files:
+            self.show_warning("Please select files to remove.")
+            return
+        
+        # Confirm deletion
+        file_names = [info['name'] for info in selected_files]
+        message = f"Are you sure you want to remove these files?\n\n" + "\n".join(file_names)
+        
+        if messagebox.askyesno("Confirm Removal", message):
+            try:
+                for file_info in selected_files:
+                    if os.path.exists(file_info['path']):
+                        os.remove(file_info['path'])
+                
+                # Refresh the file list
+                self.refresh_file_list()
+                self.show_success("Files removed successfully!")
+                
+            except Exception as e:
+                self.show_error(f"Error removing files: {str(e)}")
+
     def show_success(self, message: str):
         """Show success message"""
         messagebox.showinfo("Success", message)
