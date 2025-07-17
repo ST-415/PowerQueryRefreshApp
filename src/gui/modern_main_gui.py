@@ -210,34 +210,6 @@ class ModernMainGUI:
             text_color=("#2c3e50", "#ecf0f1")
         )
         self.status_label.pack(side="left", padx=15)
-        
-        # Log viewer button
-        self.log_viewer_button = ctk.CTkButton(
-            main_frame,
-            text="📜 View Logs",
-            command=self.show_logs,
-            width=120,
-            height=40,
-            corner_radius=20,
-            font=ctk.CTkFont(size=14, weight="bold"),
-            fg_color="#2980b9",
-            hover_color="#2471a3"
-        )
-        self.log_viewer_button.pack(side="left", padx=10, pady=(10, 0))
-        
-        # About button
-        self.about_button = ctk.CTkButton(
-            main_frame,
-            text="ℹ️ About",
-            command=self.show_about,
-            width=120,
-            height=40,
-            corner_radius=20,
-            font=ctk.CTkFont(size=14, weight="bold"),
-            fg_color="#8e44ad",
-            hover_color="#732d91"
-        )
-        self.about_button.pack(side="left", padx=10, pady=(10, 0))
     
     def refresh_file_list(self):
         """Refresh the file list with modern cards"""
@@ -436,31 +408,6 @@ class ModernMainGUI:
             settings_window = ModernSettingsWindow(self.root, self.config_manager)
         except Exception as e:
             self.show_error(f"Error opening settings: {str(e)}")
-    
-    def show_logs(self):
-        """Show log viewer window"""
-        try:
-            log_window = LogViewerWindow(self.root, self.logger_manager)
-        except Exception as e:
-            self.show_error(f"Error opening log viewer: {str(e)}")
-    
-    def show_about(self):
-        """Show about dialog"""
-        about_text = """
-PowerQuery Refresh Tool v2.0
-Modern GUI Application
-
-Features:
-• Beautiful modern interface using CustomTkinter
-• Batch refresh multiple Excel files
-• Automatic backup before refresh
-• Real-time progress tracking
-• Comprehensive logging
-• Flexible configuration
-
-Created with ❤️ by PowerQuery Team
-        """
-        messagebox.showinfo("About", about_text)
     
     def add_files(self):
         """Add files to the list"""

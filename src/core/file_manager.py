@@ -288,3 +288,29 @@ class FileManager:
         print(f"โฟลเดอร์ย่อย: {len(folder_stats)} โฟลเดอร์")
         print(f"ไฟล์ทั้งหมด: {total_files} ไฟล์")
         print(f"ขนาดรวม: {total_size/1024:.1f} KB ({total_size/(1024*1024):.2f} MB)")
+    
+    def get_excel_files(self, data_folder: str = "data") -> list:
+        """
+        ดึงรายการไฟล์ Excel จากโฟลเดอร์ data
+        
+        Args:
+            data_folder (str): โฟลเดอร์ที่จะค้นหาไฟล์ Excel
+            
+        Returns:
+            list: รายการเส้นทางไฟล์ Excel
+        """
+        excel_files = []
+        
+        # ตรวจสอบว่าโฟลเดอร์มีอยู่หรือไม่
+        if not os.path.exists(data_folder):
+            return excel_files
+        
+        # ค้นหาไฟล์ Excel ในโฟลเดอร์
+        for file_name in os.listdir(data_folder):
+            file_path = os.path.join(data_folder, file_name)
+            
+            # ตรวจสอบว่าเป็นไฟล์และเป็นไฟล์ Excel
+            if os.path.isfile(file_path) and self.is_excel_file(file_path):
+                excel_files.append(file_path)
+        
+        return sorted(excel_files)  # เรียงลำดับตามชื่อไฟล์
