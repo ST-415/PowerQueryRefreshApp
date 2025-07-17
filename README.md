@@ -2,21 +2,41 @@
 
 แอปพลิเคชันสำหรับรีเฟช Power Query ใน Excel โดยอัตโนมัติ พร้อม GUI ที่ใช้งานง่าย
 
-## 🎨 **New Dark Theme GUI**
+## 🎨 **New Modern GUI with CustomTkinter**
 
-### **Main Window Features**:
-- **VS Code Dark Theme**: Professional dark interface matching VS Code
+### **เปรียบเทียบ GUI เก่าและใหม่**:
+
+#### **GUI เก่า (tkinter)**:
+- **Dark Theme**: Professional dark interface matching VS Code
 - **Compact Size**: 750x500 pixels, fixed size for focused workflow
 - **File Management**: Check file status with visual indicators (✓ Ready / ✗ Missing)
 - **Selective Refresh**: Choose which files to refresh with checkboxes
 - **Progress Tracking**: Real-time progress bar and status updates
 - **English Interface**: Clean, professional English text
 
-### **Settings Window Features**:
-- **File Management Tab**: Add, edit, remove Excel files easily
-- **General Settings Tab**: Configure auto-save, backup, logging, and timeout
-- **Detailed Descriptions**: Built-in help text for all options
-- **Compact Design**: 700x550 pixels, modal window design
+#### **GUI ใหม่ (CustomTkinter) - แนะนำ!**:
+- **Modern Design**: สวยงาม ทันสมัย เหมือน macOS/Windows 11
+- **Smooth Animation**: การเคลื่อนไหวที่นุ่มนวล
+- **Card-based Layout**: แสดงไฟล์ในรูปแบบ Card สวยงาม
+- **Rounded Corners**: มุมโค้งมนทั่วทั้งแอป
+- **Better Colors**: ใช้สีที่สวยงามและอ่านง่าย
+- **Responsive Layout**: ปรับขนาดได้ตามหน้าจอ
+- **Modern Icons**: ใช้ Emoji Icons ที่ดูทันสมัย
+- **Tabbed Settings**: การตั้งค่าแบ่งเป็นแท็บง่ายต่อการใช้งาน
+
+### **วิธีเรียกใช้ GUI**:
+1. **GUI เก่า**: `python run_gui.py` หรือ `start_gui.bat`
+2. **GUI ใหม่**: `python run_modern_gui.py` หรือ `start_modern_gui.bat`
+
+### **Features ของ GUI ใหม่**:
+- **Beautiful File Cards**: แสดงไฟล์ในรูปแบบ Card พร้อมไอคอน ชื่อไฟล์ ขนาดไฟล์
+- **Smart Progress Bar**: แสดงความคืบหน้าที่สวยงาม
+- **Modern Settings**: หน้าต่างการตั้งค่าแบ่งเป็น 3 แท็บ
+  - 📁 **Folders**: จัดการโฟลเดอร์
+  - 💾 **Backup**: ตั้งค่าการสำรอง
+  - 🔄 **Refresh**: ตั้งค่าการรีเฟช
+- **Better Button Design**: ปุ่มกดสวยงาม มีสีสันเหมาะสม
+- **Improved Layout**: การจัดวางที่ดีกว่า ใช้พื้นที่ได้มีประสิทธิภาพ
 
 ## โครงสร้างโปรเจกต์
 
@@ -50,27 +70,34 @@ PowerQueryRefreshApp/
 └── README.md                   # เอกสารนี้
 ```
 
-## การติดตั้ง
+## 🚀 การติดตั้งและใช้งาน
 
-1. ติดตั้ง Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### ติดตั้ง Dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-2. ปรับแต่งการตั้งค่าใน `config/config.json`
+### วิธีใช้งาน:
 
-## การใช้งาน
+#### 1. **GUI แบบใหม่ (แนะนำ)**:
+```bash
+python run_modern_gui.py
+```
+หรือ
+```bash
+start_modern_gui.bat
+```
 
-### GUI Application (แนะนำ)
-เรียกใช้ GUI:
+#### 2. **GUI แบบเก่า**:
 ```bash
 python run_gui.py
 ```
+หรือ
+```bash
+start_gui.bat
+```
 
-หรือดับเบิลคลิกที่ `start_gui.bat`
-
-### Command Line Interface
-เรียกใช้แบบอัตโนมัติ:
+#### 3. **Command Line**:
 ```bash
 python run.py
 ```

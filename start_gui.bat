@@ -3,7 +3,7 @@ title PowerQuery Refresh Tool
 cls
 echo.
 echo ==========================================
-echo   PowerQuery Refresh Tool - Dark Theme
+echo         PowerQuery Refresh Tool
 echo ==========================================
 echo.
 echo Starting application...

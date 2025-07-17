@@ -1,2 +1,4 @@
 # Power Query Refresh Application Dependencies
 xlwings>=0.30.0
+customtkinter>=5.2.0
+pillow>=9.0.0
